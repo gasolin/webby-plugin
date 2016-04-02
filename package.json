@@ -12,9 +12,13 @@
   },
   "keywords": [
     "hubot",
-    "webby",
-    "script"
+    "hubot-scripts"
+    "webbybot",
+    "webby-scripts"
   ],
   "author": "gasolin",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "webbybot": ">=0.3.0"
+  }
 }
