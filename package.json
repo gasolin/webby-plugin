@@ -1,7 +1,7 @@
 {
   "name": "webby-plugin",
   "version": "1.0.0",
-  "description": "plugin description, works for hubot and webbybot",
+  "description": "Hubot plugin template written with plain javascript, compatible with webbybot",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
