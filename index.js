@@ -1,6 +1,6 @@
 /**
  * Description
- *   Enables hubot to suggest places for lunchtime. Powered by Yelp.
+ *   hubot plugin template writtern in plain Javascript, compatible with webbybot.
  *
  * Dependencies:
  *

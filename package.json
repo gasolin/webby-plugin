@@ -1,6 +1,6 @@
 {
   "name": "webby-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Hubot plugin template written with plain javascript, compatible with webbybot",
   "main": "index.js",
   "scripts": {
