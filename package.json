@@ -4,7 +4,7 @@
   "description": "Hubot plugin template written with plain javascript, compatible with webbybot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "lint": "eslint index.js src/ test/"
   },
   "repository": {
