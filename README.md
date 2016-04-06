@@ -18,9 +18,25 @@ $ npm install webby-plugin
 ["webby-plugin"]
 ```
 
+[webby-template](https://github.com/gasolin/webby-template) already bundled with webby-plugin. You can check it for reference.
+
 ## Sample Interaction
 
 ```sh
-Hubot> Hubot ping
-Hubot> pong
+webby> webby test
+webby> pong
+```
+
+## Development
+
+Run code style check via
+
+```
+npm run lint
+```
+
+Add tests in `test/` folder. Run tests via
+
+```
+npm test
 ```
