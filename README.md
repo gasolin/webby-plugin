@@ -1,6 +1,8 @@
 Webby-plugin
 ============
-Hubot plugin template written with plain javascript, compatible with webbybot.
+[![npm](https://img.shields.io/npm/v/webby-plugin.svg)](https://www.npmjs.com/package/webby-plugin)
+
+Hubot plugin template written in plain javascript, compatible with webbybot.
 
 ## Installation
 
