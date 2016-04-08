@@ -1,3 +1,4 @@
+/* eslint-env node, mocha */
 var chai = require('chai');
 var sinon = require('sinon');
 chai.use(require('sinon-chai'));
@@ -9,7 +10,7 @@ describe('plugin', function() {
       respond: sinon.spy(),
       hear: sinon.spy()
     };
-    return require('../index')(this.robot);
+    return require('../src/plug')(this.robot);
   });
   it('registers a respond listener', function() {
     expect(this.robot.respond).to.have.been.calledOnce;

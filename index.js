@@ -1,15 +1,23 @@
-//
-// Description
-//   hubot plugin template writtern in plain Javascript, compatible with webbybot.
-//
-// Commands:
-//   hubot test - Reply with pong
-//
-// Author:
-//   webby team
-//
-module.exports = function(robot) {
-  robot.respond(/test$/i, function(res) {
-    res.send('pong');
+/* globals: fs, path */
+var fs = require('fs');
+var path = require('path');
+
+module.exports = function(robot, scripts) {
+  var scriptsPath = path.resolve(__dirname, 'src');
+  fs.exists(scriptsPath, function(exists) {
+    if (exists) {
+      var ref = fs.readdirSync(scriptsPath);
+      var indexOf = Array.prototype.indexOf;
+      for (var i = 0, len = ref.length; i < len; i++) {
+        var script = ref[i];
+        if (scripts != null && indexOf.call(scripts, '*') < 0) {
+          if (indexOf.call(scripts, script) >= 0) {
+            robot.loadFile(scriptsPath, script);
+          }
+        } else {
+          robot.loadFile(scriptsPath, script);
+        }
+      }
+    }
   });
 };
