@@ -10,9 +10,10 @@ describe('plugin', function() {
       respond: sinon.spy(),
       hear: sinon.spy()
     };
-    return require('../src/plug')(this.robot);
+    return require('../src/plugin')(this.robot);
   });
+
   it('registers a respond listener', function() {
-    expect(this.robot.respond).to.have.been.calledOnce;
+    expect(this.robot.respond).to.have.been.calledWith(/test$/i);
   });
 });
