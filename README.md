@@ -23,8 +23,8 @@ $ npm install webby-plugin
 ## Sample Interaction
 
 ```sh
-webby> webby test
-webby> pong
+webby> webby hello
+webby> world!
 ```
 
 ## Development

@@ -14,6 +14,6 @@ describe('plugin', function() {
   });
 
   it('registers a respond listener', function() {
-    expect(this.robot.respond).to.have.been.calledWith(/test$/i);
+    expect(this.robot.respond).to.have.been.calledWith(/hello$/i);
   });
 });
